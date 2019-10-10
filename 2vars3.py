@@ -7,4 +7,4 @@ Pay: 96.25
 hours = int(input('Enter Hours:\n'))
 rate = int(input('Rate:\n'))
 pay = hours * rate
-print('Pay:' + str(pay))
+print(f'Pay: {pay}')
