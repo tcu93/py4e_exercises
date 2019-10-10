@@ -16,10 +16,10 @@ for line in fhand:
     if not line.startswith('From') or len(words) > 2:
         continue
     else:
-        # Start: ['From', 'djhfds@domain.com']
-        stpos = words[1].find('@')      # Position of '@'
-        # Start: '@domain.com'
-        domain = words[1][stpos+1:]     # Store characters after '@': 'domain.com'
+        # Find position of '@' in words[1]
+        stpos = words[1].find('@')
+        # Store rest of words[1] characters
+        domain = words[1][stpos+1:]     
         #print(domain)
         if domain not in dict1:
             dict1[domain] = 1       
