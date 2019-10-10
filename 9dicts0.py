@@ -37,3 +37,4 @@ for values in dict1.values():
 '''Dict.get(key, default=None)'''
 
 print(dict1.get('1', 0))
+

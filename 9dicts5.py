@@ -19,12 +19,12 @@ for line in fhand:
         # Find position of '@' in words[1]
         stpos = words[1].find('@')
         # Store rest of words[1] characters
-        domain = words[1][stpos+1:]     
+        srch_str = words[1][stpos+1:]     
         #print(domain)
-        if domain not in dict1:
-            dict1[domain] = 1       
+        if srch_str not in dict1:
+            dict1[srch_str] = 1       
         else:
-            dict1[domain] += 1      
+            dict1[srch_str] += 1      
     #print(words)
 
 print(dict1)
