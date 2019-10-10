@@ -4,7 +4,10 @@ Enter Rate: 2.75
 Pay: 96.25
 '''
 
-hours = int(input('Enter Hours:\n'))
-rate = int(input('Rate:\n'))
-pay = hours * rate
-print(f'Pay: {pay}')
+crt_product = lambda arg1, arg2: arg1 * arg2
+
+hours = int(input('Enter Hours: '))
+rate = int(input('Rate: '))
+#pay = hours * rate
+#print(f'Pay: {pay}')
+print('Pay:', crt_product(hours, rate))
