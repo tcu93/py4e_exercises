@@ -3,6 +3,7 @@ a user for their name and then welcomes them.
 '''
 
 name = input('What is your name?\n')
+
 print(f'welcome {name}')
 
 
