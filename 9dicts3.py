@@ -10,10 +10,12 @@ dict1 = dict()
 # for each line in file
 for line in fhand:
     words = line.split()
-    #print(words)
+
+    # < 3 because words contains 2-element-only lists we dont want
     if not line.startswith('From') or len(words) < 3:
         continue
     else:
+        print(words)
         if words[1] not in dict1:
             dict1[words[1]] = 1
         else:

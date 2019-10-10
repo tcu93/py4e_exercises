@@ -16,7 +16,7 @@ THIS ALSO WORKS
 for x in word1:
     y = x.split()
     if x not in dict1:  # confusing -- x acts as both letter & index at same time
-        dict1[x] = 1  # this is value, no key
+        dict1[x] = 1  # this is value, not key
     else:
         dict1[x] += 1
 '''
@@ -26,9 +26,9 @@ if 'b' in dict1:
     print('true')
 
 # Create list of dict1 keys
-keys = list(dict1.keys())
-print(keys)
+k1 = list(dict1.keys())
+print(k1)
 
 # Create list of dict1 values
-vals = list(dict1.values())
-print(vals)
+v1 = list(dict1.values())
+print(v1)

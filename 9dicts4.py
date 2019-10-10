@@ -39,7 +39,7 @@ for val in dict1:
 print(maximum_address, maximum)
 
 
-'''# Better solution using lambda - insert in for loop
+'''# Solution using lambda - insert in for loop
 # compare items in dict1 based on their [1]st element
 x = max(dict1.items(), key=lambda k: k[1])
 print(x)

@@ -25,13 +25,13 @@ print(dict_lst)
 dict_lst1 = list(dict1.keys())
 print(dict_lst1)
 
-# Look through keys in dict
-for keys in dict1:
-    print(keys)
+# Loop thru & print keys in dict
+for k in dict1:
+    print(k)
 
-# Loop through values in dict
-for values in dict1.values():
-    print(values)
+# Loop thru & print values in dict
+for v in dict1.values():
+    print(v)
 
 # get() to retrieve values for keys
 '''Dict.get(key, default=None)'''
