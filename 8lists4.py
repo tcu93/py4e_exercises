@@ -26,11 +26,27 @@ str_list = []
 
 for line in data:
     str = line.decode()
-    ss = str.split()
 
-    for x in ss:
-        if x not in str_list:
+    ss = str.split()
+    
+    for x in ss: 
+        if x not in str_list: 
             str_list.append(x)
             str_list.sort()
 
-print(str_list)
+print('')
+print('STR:   ', str)
+    # Who is already sick and pale with grief
+
+print('')
+print('SS:   ', ss)
+    # ['Who', 'is', 'already', 'sick', 'and', 'pale', 'with', 'grief']
+    
+print('')
+print('STR_LIST:   ',str_list)
+''' 
+       ['Arise', 'But', 'It', 'Juliet', 'Who', 'already', 'and', 'breaks', 
+        'east', 'envious', 'fair', 'grief', 'is', 'kill', 'light', 'moon', 
+        'pale', 'sick', 'soft', 'sun', 'the', 'through', 'what', 'window', 
+        'with', 'yonder'] 
+'''
