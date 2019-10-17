@@ -18,7 +18,7 @@ for line in fhand:
     
     for word in words:
         for letter in word:
-            #print(letter)
+            # keep track of num of letters
             counts += 1
             if letter not in dict1:
                 dict1[letter] = 1
