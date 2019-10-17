@@ -25,9 +25,14 @@ for line in fhand:
             else:
                 dict1[letter] += 1
 
+print('dict1')
+print(dict1)
+
 # create sorted dictionary as list
 sorted_dict1 = sorted(dict1.items()) 
 
+print('')
+print('sorted_dict1')
 print(sorted_dict1)
 
 # create new list to hold sorted dict1 items
@@ -36,6 +41,8 @@ for k,v in sorted_dict1:
 
 rel_list.sort(reverse=True)
 
+print('')
+print('rel_list')
 for k, v in rel_list:
     #print(v, round(k, 2))
     print(f'Letter: {v}  Frequency: {round(k, 3)}%')
